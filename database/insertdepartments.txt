@@ -1,0 +1,98 @@
+INSERT INTO departments (
+    department
+)
+VALUES (
+    'Operations Department'
+);
+
+SELECT * FROM departments;
+
+
+INSERT INTO departments (
+    department
+)
+VALUES (
+    'Finance Department'
+);
+
+SELECT * FROM departments;
+
+
+INSERT INTO departments (
+    department
+)
+VALUES (
+    'Marketing Department'
+);
+
+SELECT * FROM departments;
+
+
+INSERT INTO departments (
+    department
+)
+VALUES (
+    'Information Technology Department'
+);
+
+SELECT * FROM departments;
+
+
+INSERT INTO departments (
+    department
+)
+VALUES (
+    'Sales Department'
+);
+
+SELECT * FROM departments;
+
+
+INSERT INTO departments (
+    department
+)
+VALUES (
+    'Customer Service Department'
+);
+
+SELECT * FROM departments;
+
+
+INSERT INTO departments (
+    department
+)
+VALUES (
+    'Research and Development Department'
+);
+
+SELECT * FROM departments;
+
+
+INSERT INTO departments (
+    department
+)
+VALUES (
+    'Legal Department'
+);
+
+SELECT * FROM departments;
+
+
+INSERT INTO departments (
+    department
+)
+VALUES (
+    'Public Relations Department'
+);
+
+SELECT * FROM departments;
+
+
+INSERT INTO departments (
+    department
+)
+VALUES (
+    'Human Resources Department'
+);
+
+SELECT * FROM departments;

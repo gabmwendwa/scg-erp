@@ -1,0 +1,14 @@
+CREATE USER 'adminuser'@'localhost' IDENTIFIED BY 'P@ssword1';
+
+GRANT ALL PRIVILEGES ON *.* TO 'adminuser'@'localhost' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+	
+EXIT;
+
+CREATE DATABASE erp
+ 
+CHARSET = utf8
+COLLATE = utf8_unicode_ci;
+
+USE erp;

@@ -1,0 +1,98 @@
+INSERT INTO training_list (
+    training
+)
+VALUES (
+    'Leadership Development Training'
+);
+
+SELECT * FROM training_list;
+
+
+INSERT INTO training_list (
+    training
+)
+VALUES (
+    'Communication Skills Workshop'
+);
+
+SELECT * FROM training_list;
+
+
+INSERT INTO training_list (
+    training
+)
+VALUES (
+    'Team Building Activities'
+);
+
+SELECT * FROM training_list;
+
+
+INSERT INTO training_list (
+    training
+)
+VALUES (
+    'Time Management Training'
+);
+
+SELECT * FROM training_list;
+
+
+INSERT INTO training_list (
+    training
+)
+VALUES (
+    'Customer Service Excellence'
+);
+
+SELECT * FROM training_list;
+
+
+INSERT INTO training_list (
+    training
+)
+VALUES (
+    'Diversity and Inclusion Training'
+);
+
+SELECT * FROM training_list;
+
+
+INSERT INTO training_list (
+    training
+)
+VALUES (
+    'Cybersecurity Awareness'
+);
+
+SELECT * FROM training_list;
+
+
+INSERT INTO training_list (
+    training
+)
+VALUES (
+    'Project Management Workshop'
+);
+
+SELECT * FROM training_list;
+
+
+INSERT INTO training_list (
+    training
+)
+VALUES (
+    'Sales Training'
+);
+
+SELECT * FROM training_list;
+
+
+INSERT INTO training_list (
+    training
+)
+VALUES (
+    'Change Management Seminar'
+);
+
+SELECT * FROM training_list;

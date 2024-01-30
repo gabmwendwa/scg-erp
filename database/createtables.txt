@@ -1,0 +1,132 @@
+CREATE TABLE departments 
+(
+id int(11) not null primary key auto_increment,
+department varchar(50) not null
+)
+ENGINE = InnoDB CHARSET = utf8 COLLATE = utf8_unicode_ci AUTO_INCREMENT = 1 COMMENT 'List of departments.';
+
+DESCRIBE departments;
+
+CREATE TABLE department_positions 
+(
+id int(11) not null primary key auto_increment,
+department_id int(11) not null,
+position varchar(50) not null,
+FOREIGN KEY(department_id) REFERENCES departments(id)
+)
+ENGINE = InnoDB CHARSET = utf8 COLLATE = utf8_unicode_ci AUTO_INCREMENT = 1 COMMENT 'List of department positions.';
+
+DESCRIBE department_positions;
+
+
+CREATE TABLE employees
+(
+id int(11) not null primary key auto_increment,
+position_id int(11) not null,
+employee_number varchar(20) unique not null,
+firstname varchar(20) not null,
+lastname varchar(20) not null,
+email varchar(100) unique not null,
+telephone varchar(20) unique not null,
+recruitment_date varchar(30) not null,
+onboarding_date varchar(30) not null,
+browser_timezone varchar(150) not null COMMENT 'Timezone from browser',
+browser_timestamp varchar(70) not null COMMENT 'Timestamp from browser',
+server_timestamp timestamp not null default CURRENT_TIMESTAMP COMMENT 'Timestamp from server',
+FOREIGN KEY(position_id) REFERENCES department_positions(id) 
+)
+ENGINE = InnoDB CHARSET = utf8 COLLATE = utf8_unicode_ci AUTO_INCREMENT = 1 COMMENT 'List of employee information.';
+
+DESCRIBE employees;
+
+
+CREATE TABLE training_list 
+(
+id int(11) not null primary key auto_increment,
+training varchar(200) not null
+)
+ENGINE = InnoDB CHARSET = utf8 COLLATE = utf8_unicode_ci AUTO_INCREMENT = 1 COMMENT 'List of available training.';
+
+DESCRIBE training_list;
+
+CREATE TABLE employee_training 
+(
+id int(11) not null primary key auto_increment,
+training_id int(11) not null,
+employee_id int(11) not null,
+from_date varchar(30) not null,
+to_date varchar(30) not null,
+FOREIGN KEY(training_id) REFERENCES training_list(id),
+FOREIGN KEY(employee_id) REFERENCES employees(id)
+)
+ENGINE = InnoDB CHARSET = utf8 COLLATE = utf8_unicode_ci AUTO_INCREMENT = 1 COMMENT 'List of employee training.';
+
+DESCRIBE employee_training;
+
+
+CREATE TABLE employee_leave 
+(
+id int(11) not null primary key auto_increment,
+employee_id int(11) not null,
+leave_dates text not null,
+browser_timezone varchar(150) not null COMMENT 'Timezone from browser',
+browser_timestamp varchar(70) not null COMMENT 'Timestamp from browser',
+server_timestamp timestamp not null default CURRENT_TIMESTAMP COMMENT 'Timestamp from server',
+FOREIGN KEY(employee_id) REFERENCES employees(id)
+)
+ENGINE = InnoDB CHARSET = utf8 COLLATE = utf8_unicode_ci AUTO_INCREMENT = 1 COMMENT 'Employee leave table.';
+
+DESCRIBE employee_leave;
+
+
+CREATE TABLE employee_performance 
+(
+id int(11) not null primary key auto_increment,
+employee_id int(11) not null,
+performance enum('1','2','3','4','5') not null COMMENT '1=Very Low, 2=Low, 3=Neutral, 4=High, 5=Very High',
+browser_timezone varchar(150) not null COMMENT 'Timezone from browser',
+browser_timestamp varchar(70) not null COMMENT 'Timestamp from browser',
+server_timestamp timestamp not null default CURRENT_TIMESTAMP COMMENT 'Timestamp from server',
+FOREIGN KEY(employee_id) REFERENCES employees(id)
+)
+ENGINE = InnoDB CHARSET = utf8 COLLATE = utf8_unicode_ci AUTO_INCREMENT = 1 COMMENT 'Employee performance table.';
+
+DESCRIBE employee_performance;
+
+CREATE TABLE employee_attendance 
+(
+id int(11) not null primary key auto_increment,
+employee_id int(11) not null,
+attendance_datetime varchar(70) not null,
+browser_timezone varchar(150) not null COMMENT 'Timezone from browser',
+browser_timestamp varchar(70) not null COMMENT 'Timestamp from browser',
+server_timestamp timestamp not null default CURRENT_TIMESTAMP COMMENT 'Timestamp from server',
+FOREIGN KEY(employee_id) REFERENCES employees(id)
+)
+ENGINE = InnoDB CHARSET = utf8 COLLATE = utf8_unicode_ci AUTO_INCREMENT = 1 COMMENT 'Employee performance table.';
+
+DESCRIBE employee_attendance;
+
+CREATE TABLE employee_payroll 
+(
+id int(11) not null primary key auto_increment,
+employee_id int(11) not null,
+gross_salary int(7) not null,
+FOREIGN KEY(employee_id) REFERENCES employees(id)
+)
+ENGINE = InnoDB CHARSET = utf8 COLLATE = utf8_unicode_ci AUTO_INCREMENT = 1 COMMENT 'Employee performance table.';
+
+DESCRIBE employee_payroll;
+
+DROP TABLE levy_deductions; 
+
+CREATE TABLE levy_deductions 
+(
+id int(11) not null primary key auto_increment,
+deduction varchar(50) not null,
+the_rate varchar(5),
+comment text null
+)
+ENGINE = InnoDB CHARSET = utf8 COLLATE = utf8_unicode_ci AUTO_INCREMENT = 1 COMMENT 'List of deductions.';
+
+DESCRIBE levy_deductions;

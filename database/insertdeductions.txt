@@ -1,0 +1,68 @@
+INSERT INTO levy_deductions (
+    deduction,
+    the_rate,
+    comment
+)
+VALUES (
+    'PAYE',
+    '30',
+    'Assuming it is 30%'
+);
+
+SELECT * FROM levy_deductions;
+
+
+INSERT INTO levy_deductions (
+    deduction,
+    the_rate,
+    comment
+)
+VALUES (
+    'NSSF - Tier 1',
+    '360',
+    'Fixed amount in shillings'
+);
+
+SELECT * FROM levy_deductions;
+
+
+INSERT INTO levy_deductions (
+    deduction,
+    the_rate,
+    comment
+)
+VALUES (
+    'NSSF - Tier 2',
+    '720',
+    'Fixed amount in shillings'
+);
+
+SELECT * FROM levy_deductions;
+
+
+INSERT INTO levy_deductions (
+    deduction,
+    the_rate,
+    comment
+)
+VALUES (
+    'NHIF',
+    '3.75',
+    'Assuming it is 3.75%'
+);
+
+SELECT * FROM levy_deductions;
+
+
+INSERT INTO levy_deductions (
+    deduction,
+    the_rate,
+    comment
+)
+VALUES (
+    'Housing Levy',
+    '1.5',
+    'Assuming it is 1.5%'
+);
+
+SELECT * FROM levy_deductions;

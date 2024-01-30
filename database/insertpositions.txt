@@ -1,0 +1,388 @@
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    1,
+    'Operations Manager'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    1,
+    'Procurement Officer'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    1,
+    'Logistics Officer'
+);
+
+SELECT * FROM department_positions;
+
+
+--------------------------------------------------------------------
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    2,
+    'Finance Manager'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    2,
+    'Accountant'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    2,
+    'Cashier'
+);
+
+SELECT * FROM department_positions;
+
+
+--------------------------------------------------------------------
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    3,
+    'Marketing Manager'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    3,
+    'Content Specialist'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    3,
+    'Graphic Designer'
+);
+
+SELECT * FROM department_positions;
+
+
+-------------------------------------------------------------------
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    4,
+    'Chief Information Officer'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    4,
+    'Network Administrator'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    4,
+    'IT Support Specialist'
+);
+
+SELECT * FROM department_positions;
+
+
+-------------------------------------------------------------------
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    5,
+    'Sales Director'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    5,
+    'Account Executive'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    5,
+    'Sales Development Representative'
+);
+
+SELECT * FROM department_positions;
+
+
+-------------------------------------------------------------------
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    6,
+    'Customer Service Manager'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    6,
+    'Customer Support Representative'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    6,
+    'Client Success Specialist'
+);
+
+SELECT * FROM department_positions;
+
+
+-------------------------------------------------------------------
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    7,
+    'Research and Development Director'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    7,
+    'Research Scientist'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    7,
+    'Product Development Engineer'
+);
+
+SELECT * FROM department_positions;
+
+
+-------------------------------------------------------------------
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    8,
+    'General Counsel'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    8,
+    'Legal Assistant'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    8,
+    'Contracts Manager'
+);
+
+SELECT * FROM department_positions;
+
+
+-------------------------------------------------------------------
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    9,
+    'PR Manager'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    9,
+    'Media Relations Specialist'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    9,
+    'Event Coordinator'
+);
+
+SELECT * FROM department_positions;
+
+
+-------------------------------------------------------------------
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    10,
+    'HR Manager'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    10,
+    'Recruitment Specialist'
+);
+
+SELECT * FROM department_positions;
+
+
+INSERT INTO department_positions (
+    department_id,
+    position
+)
+VALUES (
+    10,
+    'Employee Relations Coordinator'
+);
+
+SELECT * FROM department_positions;
+
+
+-------------------------------------------------------------------

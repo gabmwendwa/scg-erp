@@ -1,0 +1,28 @@
+CREATE OR REPLACE VIEW organization_setup_view
+ AS
+SELECT d.id AS department_id, d.department, dp.id AS position_id,dp.position
+FROM departments AS d INNER JOIN department_positions AS dp ORDER BY d.id ASC;
+
+SELECT * FROM organization_setup_view;
+
+CREATE OR REPLACE VIEW payroll_view
+ AS
+SELECT p.id AS payroll_id, p.employee_id, e.firstname, e.lastname, p.gross_salary
+FROM employee_payroll AS p INNER JOIN employees AS e ORDER BY p.id ASC;
+
+SELECT * FROM payroll_view;
+
+
+CREATE OR REPLACE VIEW dashboard_view
+ AS
+SELECT e.id, e.employee_number, e.firstname, e.lastname, e.email, e.telephone, e.recruitment_date, e.onboarding_date, e.position_id,
+dp.position, dp.department_id,
+d.department,
+p.id AS payroll_id, p.gross_salary
+FROM employees AS e INNER JOIN employee_payroll AS p INNER JOIN department_positions as dp INNER JOIN departments as d
+WHERE p.employee_id = e.id
+AND e.position_id = dp.id
+AND dp.department_id = d.id
+ORDER BY e.id ASC;
+
+SELECT * FROM dashboard_view;
