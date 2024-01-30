@@ -26,8 +26,6 @@ if (count($prfr) > 0) {
 			'info' => (array) $pr
 		);
 
-		// array_push($item, (array) $pr);
-
 		// Push Data
 		array_push($read_arr['data'], $item);
 	}
