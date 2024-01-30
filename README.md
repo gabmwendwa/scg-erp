@@ -1,4 +1,6 @@
 # SCG - ERP Test Project
+## ABOUT
+A sample/test web-based ERP project for Stan Consulting Group Limited presentation.
 ## PHP API Links
 ### CREATE
 - https://localhost/erp-php/api/create/index.php?cemployee
